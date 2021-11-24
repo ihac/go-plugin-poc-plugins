@@ -1,4 +1,5 @@
-BUILD_DIR = build
+PROJECT_DIR = $(shell dirname $(realpath $(firstword $(MAKEFILE_LIST))))
+BUILD_DIR = $(PROJECT_DIR)/build
 
 .PHONY: clean plugin1 plugin2
 
